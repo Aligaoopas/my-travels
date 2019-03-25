@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import Quote from "./Travel";
+
+import Travels from "./Travels";
 
 class App extends Component {
   render() {
@@ -13,18 +14,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Destination</h1>
         </header>
-        <Quote
-          destination="Toulouse"
-          country="France"
-          image="https://www.edreams.com/blog/wp-content/uploads/sites/3/2018/02/Toulouse-Saint-Pierre-Bridge.jpg"
-          distance="883"
-        />
-        <Quote
-          destination="Moscou"
-          country="Russie"
-          image="https://www.voyageursdumonde.fr/vdm/imgProduits/RUS/408728.ori.jpg"
-          distance="2 594"
-        />
+        <Travels/>
       </div>
     );
   }
